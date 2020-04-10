@@ -1,3 +1,5 @@
+this is a gmail bot email sender , you can annoy your friends by sending bots email for them LOL 
+
 Few things before initizliaizng :
 
 1) make sure you are signed in to you g-mail acoount and its opened 
