@@ -47,7 +47,7 @@ class MyWindow:
         self.t4.place(x=200, y=200 )
 
         self.lbl5.place(x=100, y=250)
-        self.t5.place(x=200, y=250 , width=300 , height=300)
+        self.t5.place(x=200, y=250 , width=150 , height=150)
 
 
 
@@ -60,15 +60,15 @@ class MyWindow:
 
         self.b2=Button(win, text='Sending Email processing ...',background='green')
         self.b3=Button(win, text='Faild to send ', background='red')
-        self.b1.place(x=300, y=600)
-        self.b4.place(x=300, y=650)
+        self.b1.place(x=250, y=440)
+        self.b4.place(x=250, y=500)
 
 
 
-        self.lbl6.place(x=100, y=700)
-        self.lbl7.place(x=100, y=720)
-        self.lbl9.place(x=100, y=740)
-        self.lbl8.place(x=0, y=780)
+        self.lbl6.place(x=100, y=550)
+        self.lbl7.place(x=100, y=570)
+        self.lbl9.place(x=100, y=630)
+        self.lbl8.place(x=0, y=600)
 
         link1 = Label(text=" go to : https://myaccount.google.com/lesssecureapps to enable it ", fg="blue", cursor="hand2")
         link1.place(x=400, y=750)
@@ -106,9 +106,9 @@ class MyWindow:
             txt=str(self.t5.get())
             result=dd.sendEmail(sender,password,From,to,sub,txt)
             if (result==True):
-                self.b2.place(x=450, y=620)
+                self.b2.place(x=650, y=620)
             else:
-                self.b3.place(x=450, y=620)
+                self.b3.place(x=650, y=620)
                 break
 
 
@@ -129,5 +129,5 @@ class MyWindow:
 window=Tk()
 mywin=MyWindow(window)
 window.title('BOT Gmail Loop ')
-window.geometry("800x800+10+10")
+window.geometry("900x900+10+10")
 window.mainloop()
